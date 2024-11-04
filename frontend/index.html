@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RememberMe - Manage and Remember Names</title>
+    <meta
+      name="description"
+      content="RememberMe is an application that helps you manage and remember people's names, where you met them, and unique details about them."
+    />
+    <meta
+      name="keywords"
+      content="name management, remember names, personal organizer, social networking"
+    />
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
+    <button id="logout-button" onclick="confirmLogout()">Logout</button>
+
+    <main class="app-container">
+      <h1 class="title">RememberMe</h1>
+
+      <!-- Search Section -->
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Search by name or location..."
+        aria-label="Search for names or locations"
+      />
+      <small id="search-help" class="visually-hidden"
+        >Type a name or location to search.</small
+      >
+
+      <!-- Name Form Section -->
+      <form id="name-form" aria-labelledby="name-form-title">
+        <h2 id="name-form-title" class="visually-hidden">Add a new name</h2>
+
+        <input
+          type="text"
+          id="name-input"
+          placeholder="Enter name"
+          required
+          minlength="3"
+          aria-required="true"
+          aria-label="Person's name"
+        />
+        <span class="error" aria-live="polite"></span>
+
+        <input
+          type="text"
+          id="where-input"
+          placeholder="Where did you meet?"
+          required
+          minlength="3"
+          aria-required="true"
+          aria-label="Location where you met the person"
+        />
+        <span class="error" aria-live="polite"></span>
+
+        <textarea
+          id="unique-input"
+          placeholder="Something unique"
+          required
+          minlength="5"
+          aria-required="true"
+          aria-label="Unique detail about the person"
+        ></textarea>
+        <span class="error" aria-live="polite"></span>
+
+        <button type="submit" aria-label="Add name">Add Name</button>
+      </form>
+
+      <!-- Name List Section -->
+      <div id="name-list-container">
+        <p id="empty-list-message" style="display: none">No names added yet.</p>
+        <ul id="name-list"></ul>
+      </div>
+    </main>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
