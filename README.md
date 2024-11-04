@@ -4,13 +4,19 @@ RememberMe is a web application that helps users manage and remember people's na
 
 ## Table of Contents
 Project Overview
+
 Features
+
 Technologies Used
+
 Getting Started
+
 Installation
+
 Usage
+
 API Endpoints
-Folder Structure
+
 License
 
 ## Project Overview
