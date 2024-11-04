@@ -1,4 +1,3 @@
-RememberMe
 RememberMe is a web application that helps users manage and remember people's names, locations where they met, and unique details about them. This app is particularly useful for networking, social gatherings, or remembering contacts.
 
 Project Overview
