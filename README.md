@@ -62,23 +62,10 @@ API Endpoints
 Authentication
 POST /api/auth/register: Register a new user.
 POST /api/auth/login: Login an existing user and receive a JWT.
-Contacts
-GET /api/contacts: Fetch all contacts (requires authentication).
-POST /api/contacts: Add a new contact (requires authentication).
-DELETE /api/contacts/:id: Delete a contact by ID (requires authentication).
-
-## Folder Structure
-RememberMe/
-models/ (Contains Mongoose models)
-routes/ (Express route handlers)
-public/ (Static files: HTML, CSS, client-side JS)
-index.html (Main application HTML file)
-.env (Environment variables, not tracked in Git)
-.gitignore (Git ignore rules)
-README.md (Project README file)
-server.js (Main server file)
-package.json (npm package configuration)
-
+names
+GET /api/names: Fetch all names (requires authentication).
+POST /api/names: Add a new name (requires authentication).
+DELETE /api/names/:id: Delete a name by ID (requires authentication).
 
 
 License
