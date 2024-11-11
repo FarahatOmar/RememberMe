@@ -16,7 +16,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGODB_URI || config.connectionString);
+mongoose.connect(process.env.MONGODB_URI);
 
 // Routes
 const namesRoute = require("./routes/names");
